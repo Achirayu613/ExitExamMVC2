@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>รายละเอียดคำสัญญา</title>
+    <link rel="stylesheet" href="promise-detail.css">
+</head>
+<body>
+
+    <h1>รายละเอียดคำสัญญา</h1>
+
+    <!-- ข้อมูลคำสัญญา -->
+    <div class="promise-box">
+        <p><strong>รหัสคำสัญญา:</strong> P001</p>
+        <p><strong>รหัสนักการเมือง:</strong> 12345678</p>
+        <p><strong>รายละเอียด:</strong> พัฒนาระบบขนส่งสาธารณะให้ครอบคลุมทุกพื้นที่</p>
+        <p><strong>วันที่ประกาศ:</strong> 01/01/2024</p>
+        <p><strong>สถานะ:</strong> <span class="in-progress">กำลังดำเนินการ</span></p>
+    </div>
+
+    <!-- ประวัติการอัปเดต -->
+    <h2>ประวัติการอัปเดต</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>วันที่อัปเดต</th>
+                <th>รายละเอียดความคืบหน้า</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>10/01/2024</td>
+                <td>เริ่มวางแผนโครงการและตั้งคณะทำงาน</td>
+            </tr>
+            <tr>
+                <td>05/02/2024</td>
+                <td>อนุมัติงบประมาณระยะแรก</td>
+            </tr>
+            <tr>
+                <td>20/03/2024</td>
+                <td>เริ่มดำเนินงานในพื้นที่นำร่อง</td>
+            </tr>
+        </tbody>
+    </table>
+<a href="{{ url_for('promise_detail', pid=p.promise_id) }}">
+    ดูรายละเอียด
+</a>
+
+</body>
+</html>
